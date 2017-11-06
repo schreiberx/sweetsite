@@ -1,0 +1,5 @@
+Use e.g.
+
+jekyll build  -d /var/www/html/sweet
+
+to generate real website content
