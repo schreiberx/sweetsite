@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Developers
-permalink: /developers/
+permalink: /developers.html
 ---
 
 
-There is a SLACK channel available for SWEET developers and users, please send an Email to one of the active contributors for an invitation.
+There is a SLACK channel sweet-dev.slack.com available for SWEET developers and users.
 
 SWEET is a community code with several contributors.
 
