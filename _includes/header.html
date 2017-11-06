@@ -14,11 +14,20 @@
       </a>
 
       <div class="trigger">
+          <a class="page-link" href="/sweetsite//index.html">Home</a>
+          <a class="page-link" href="/sweetsite//gallery.html">Gallery</a>
+          <a class="page-link" href="/sweetsite//documentation.html">Documentation</a>
+          <a class="page-link" href="/sweetsite//tutorials.html">Tutorials</a>
+          <a class="page-link" href="/sweetsite//developers.html">Developers</a>
+          <a class="page-link" href="/sweetsite//download.html">Download</a>
+
+	{% comment %}
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
+	{% endcomment %}
       </div>
     </nav>
 
