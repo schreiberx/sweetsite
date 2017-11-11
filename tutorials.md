@@ -7,5 +7,5 @@ permalink: /tutorials.html
 
 This page provides an overview of tutorials with SWEET
 
- * tut1
- * tut2
+ * <a href="tutorials/rexi.html">REXI</a>
+ * ... more to come soon ...
