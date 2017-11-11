@@ -29,20 +29,19 @@ SWEET supports periodic boundary conditions for
   <li>Leapfrog</li>
   <li>Crank-Nicolson</li>
   <li>Semi-Lagrangian</li>
-  <li>Rational approximation of exponential Integrators (REXI)</li>
+  <li>Parallel-in-time
   <ul>
-    <li>T-REXI (Terry's method)</li>
-    <li>CI-REXI (Cauchy Contour integral method)</li>
-    <li>file import</li>
+    <li>Parareal</li>
+    <li>PFASST</li>
+    <li>Rational approximation of exponential Integrators (REXI)</li>
+    <ul>
+      <li>T-REXI (Terry's method)</li>
+      <li>CI-REXI (Cauchy Contour integral method)</li>
+      <li>file import</li>
+    </ul>
   </ul>
+  </li>
   <li>...and many more time steppers...</li>
-</ul>
-
-
-<h3>Parallel-in-time</h3>
-<ul>
-  <li>Parareal</li>
-  <li>PFASST</li>
 </ul>
 
 
