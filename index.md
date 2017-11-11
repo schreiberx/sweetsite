@@ -33,4 +33,5 @@ on 2D surfaces. The currently supported surfaces are</p>
   <li>Shallow-water equations</li>
   <li>Advection</li>
   <li>Burgers’</li>
+  <li>...</li>
 </ul>

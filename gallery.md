@@ -8,12 +8,21 @@ permalink: /gallery.html
 SWEET has an interactive GUI frontend as well as a file backend. This was used to generate the following images and videos:
 
 
-* Galewsky benchmark
-  <a href="https://www.youtube.com/watch?v=bEJ8c26TFEk" target="_blank">Youtube video</a>
+<h2>Shallow-water equations on the plane</h2>
 
-* Galwesky-like benchmark on plane (unstable jet)<br />
+<h3>Galwesky-like benchmark on plane (unstable jet)</h3>
   <img src="data/gallery/unstablejet_360.gif" style="max-width:200px; width:auto; height:auto" />
 
-* Propagating Gaussian bumps on rotating sphere
-  <a href="https://www.youtube.com/watch?v=mmaj0l2ZO9k" target="_blank">Youtube video</a>
+<h3>Polvani tests (<a href="gallery/polvani.html">see more</a>)<h3>
+  <img src="data/gallery/polvani/script_swe_plane_polvani_A_PR0.01_PF0.04.png" />
+
+
+
+<h2>Shallow-water equations on the sphere</h2>
+
+<h3>Galewsky benchmark</h3>
+  {% include youtubePlayer.html id="bEJ8c26TFEk" %}
+
+<h3>Propagating Gaussian bumps on rotating sphere</h3>
+  {% include youtubePlayer.html id="mmaj0l2ZO9k" %}
 
