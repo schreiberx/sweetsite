@@ -1,5 +1,14 @@
-Use e.g.
+All this webcontent is generated with Jekyll.
 
-jekyll build  -d /var/www/html/sweet
+Webcontent is written in .md files.
+After comitting the changes, Jekyll is executed on them to generate .html files.
+
+This can be tested locally by executing
+
+	./install_var_www.sh
 
 to generate real website content
+
+
+SWEET website:
+	https://schreiberx.github.io/sweetsite/

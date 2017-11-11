@@ -6,31 +6,57 @@ permalink: index.html
 
 SWEET! Shallow Water Equation Environment for Tests, Awesome!
 
-<b>This site is currently build up</b>
-<b>This site is currently build up</b>
-<b>This site is currently build up</b>
+<h2 id="features">Features</h2>
 
-<h1 id="features">Features</h1>
-
-<p>This library supports various kinds of simulations (not only Shallow Water)
-on 2D surfaces. The currently supported surfaces are</p>
+<h3>Domains</h3>
+SWEET supports periodic boundary conditions for
 <ul>
-  <li>the 2D torus (bi-periodic plane) and</li>
+  <li>the 2D torus</li>
   <li>the sphere</li>
 </ul>
 
-<p>For discretization, we use</p>
+<h3>Space discretization</h3>
 <ul>
-  <li>the double FFT for the plane and</li>
-  <li>Finite-differences on the plane</li>
-  <li>Spherical Harmonics on the sphere.</li>
+  <li>PLANE: Spectral methods based on Fourier space</li>
+  <li>PLANE: Finite differences</li>
+  <li>SPHERE: Spherical Harmonics</li>
 </ul>
 
-<h1 id="applications">Applications</h1>
-
-<p>Test implementations for the following applications are available:</p>
+<h3>Time discretization</h3>
 <ul>
-  <li>Shallow-water equations</li>
+  <li>Explicit RK</li>
+  <li>Implicit RK</li>
+  <li>Leapfrog</li>
+  <li>Crank-Nicolson</li>
+  <li>Semi-Lagrangian</li>
+  <li>Rational approximation of exponential Integrators (REXI)</li>
+  <ul>
+    <li>T-REXI (Terry's method)</li>
+    <li>CI-REXI (Cauchy Contour integral method)</li>
+    <li>file import</li>
+  </ul>
+  <li>...and many more time steppers...</li>
+</ul>
+
+
+<h3>Parallel-in-time</h3>
+<ul>
+  <li>Parareal</li>
+  <li>PFASST</li>
+</ul>
+
+
+<h3>Special features</h3>
+<ul>
+  <li>Graphical user interface</li>
+  <li>Fast Helmholtz solver in spectral space</li>
+  <li>...</li>
+</ul>
+
+<h3>Applications and benchmarks</h3>
+There's support for various applications
+<ul>
+  <li>Shallow-water equations on plane/sphere</li>
   <li>Advection</li>
   <li>Burgers’</li>
   <li>...</li>
