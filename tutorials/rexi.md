@@ -10,7 +10,7 @@ Focus: Analyse errors of REXI methods with SWEET using the linearized SWE on the
 
 
 We start by compiling SWEET:
-scons --program=swe_plane_rexi --gui=enable<br />
+scons --program=swe_plane --gui=enable<br />
 <br />
 The default options are to compile with spectral methods on the plane which is also what we want to have<br />
 <br />
@@ -19,7 +19,7 @@ We also activate the GUI since I'd like to see the waves wobbling around<br />
 If there's any software missing, this can be installed via the scripts in 'local_software'<br />
 <br />
 We can then run simulations by using<br />
-./build/swe_plane_rexi_plspec_pldeal_gui_omp_fft_gnu_release  -M 128 -s 1  --timestepping-method=l_rexi --timestepping-order=1 --rexi-method=ci  -X 1 -f 1 -H 1 -g 1 --rexi-ci-sx=20 --rexi-ci-sy=20 --dt=0.01 --compute-errors=1 -o 0.1 -v 2<br />
+./build/swe_plane_plspec_pldeal_gui_omp_fft_gnu_release  -M 128 -s 1  --timestepping-method=l_rexi --timestepping-order=1 --rexi-method=ci  -X 1 -f 1 -H 1 -g 1 --rexi-ci-sx=20 --rexi-ci-sy=20 --dt=0.01 --compute-errors=1 -o 0.1 -v 2<br />
 <br />
 Param -M: how many modes do we want to use? 128!<br />
 <br />
