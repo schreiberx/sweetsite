@@ -7,5 +7,6 @@ permalink: /tutorials.html
 
 This page provides an overview of tutorials with SWEET
 
- * <a href="tutorials/rexi.html">REXI</a>
+ * [REXI](tutorials/rexi.html)
+ * [SWE Plane output files](tutorials/swe_plane_output_files.html)
  * ... more to come soon ...
