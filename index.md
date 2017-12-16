@@ -11,7 +11,7 @@ SWEET! Shallow Water Equation Environment for Tests, Awesome!
 <h3>Domains</h3>
 SWEET supports periodic boundary conditions for
 <ul>
-  <li>the 2D torus</li>
+  <li>the bi-periodic plane (2D torus)</li>
   <li>the sphere</li>
 </ul>
 
@@ -49,6 +49,7 @@ SWEET supports periodic boundary conditions for
 <ul>
   <li>Graphical user interface</li>
   <li>Fast Helmholtz solver in spectral space</li>
+  <li>Easy-to-code in C++</li>
   <li>...</li>
 </ul>
 
