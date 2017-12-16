@@ -5,7 +5,7 @@ permalink: /community.html
 ---
 
 
-There is a SLACK channel sweet-dev.slack.com available for SWEET developers and users.
+There is a [SLACK](http://www.slack.com/) channel sweet-dev.slack.com available for SWEET developers and users.
 
 SWEET is a community code with several contributors.
 
