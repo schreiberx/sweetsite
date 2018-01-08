@@ -26,3 +26,7 @@ SWEET has an interactive GUI frontend as well as a file backend. This was used t
 <h3>Propagating Gaussian bumps on rotating sphere</h3>
   {% include youtubePlayer.html id="mmaj0l2ZO9k" %}
 
+
+<h2>Burgers equation on the plane</h2>
+
+<h3>Propagation of Gaussian bump for different viscosities (<a href="gallery/burgers_gauss.md">see results</a>)</h3>
