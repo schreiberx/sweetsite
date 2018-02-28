@@ -29,4 +29,4 @@ SWEET has an interactive GUI frontend as well as a file backend. This was used t
 
 <h2>Burgers equation on the plane</h2>
 
-<h3>Propagation of Gaussian bump for different viscosities (<a href="gallery/burgers_gauss.md">see results</a>)</h3>
+<h3>Propagation of Gaussian bump for different viscosities (<a href="gallery/burgers_gauss.html">see results</a>)</h3>
