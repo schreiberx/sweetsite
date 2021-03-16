@@ -24,10 +24,10 @@ $ scons --program=swe_plane
 
 * Execute program with the following parameters:
 ```
-$ ./build/swe_plane_*_release --timestepping-method=l_erk --timestepping-order=4 --dt=0.01 -t 5 -M 128 --benchmark=gaussian_bump -f 1 -g 1 -H 1 -o 0.1 -v 2
+$ ./build/swe_plane_*_release --timestepping-method=l_erk --timestepping-order=4 --dt=0.005 -t 5 -M 128 --benchmark-name=gaussian_bump -f 1 -g 1 -H 1 -o 0.1 -v 2
 ```
 Here, the meaning of the parameters is as follows:
-	* ```--timestepping-method=l_erk --timestepping-order=4 --dt=0.01```
+	* ```--timestepping-method=l_erk --timestepping-order=4 --dt=0.005```
 
 		Runge-Kutta order 4 time stepping method for linear parts of shallow-water equations and time step size of 0.01
 
@@ -41,7 +41,7 @@ Here, the meaning of the parameters is as follows:
 
 		Spectral resolution of 128
 
-	* ```--benchmark=gaussian_bump```
+	* ```--benchmark-name=gaussian_bump```
 
 		Choose gaussian bump benchmark
 
