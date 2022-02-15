@@ -8,10 +8,9 @@ permalink: tutorials/libpfasst_swe_sphere.html
 This tutorial describes how to run the SWEET programs making use of [LibPFASST](https://github.com/libpfasst/LibPFASST).
 The example uses `libpfasst_swe_sphere_imex_sdc` but is equivalent to using `libpfasst_swe_sphere_expl_sdc`.
 
+For the MLSDC program `libpfasst_swe_sphere_mlsdc`, additional flags are available. Those are explained in section 2.
 
-**Note**: The program `libpfasst_swe_sphere_mlsdc_sdc` is available as well but **not** ready for use!
-
-## Compilation
+## 1. Compilation
 
 We start by loading the SWEET environment:
 
@@ -33,8 +32,9 @@ $ scons --program=libpfasst_swe_sphere_imex_sdc --quadmath=disable --libpfasst=e
 
 To compile in debug mode, add the flag `--mode=debug`.
 For the pure explicit SDC program, replace `libpfasst_swe_sphere_imex_sdc` with `libpfasst_swe_sphere_expl_sdc`.
+For the MLSDC program, use `libpfasst_swe_sphere_mlsdc` instead.
 
-## Running the program
+## 2. Running the program
 
 Execute the program with the following parameters:
 
@@ -77,8 +77,34 @@ Use the `libpfasst-*` parameters to adjust the convergence order as needed. (see
 
 		Be a little bit more verbose
 
+### Additional flags for MLSDC
 
-## Using the output
+* Meaning of the parameters:
+
+    * ```--libpfasst-nlevels```
+
+		The number of levels. Currently, 1 or 2 levels are supported. If you plan to use one level, consider using the SDC programs.
+
+    * ```--libpfasst-nsweeps-coarse```
+
+		Number of sweeps on the coarsest level.
+
+    * ```--libpfasst-coarsening-multiplier```
+
+		This is used to compute the amount of modes on the coarser level(s), by repeatedly applying the factor to `-M`
+
+    * ```--libpfasst-u2```, ```--libpfasst-u4```, ```--libpfasst-u6```, ```--libpfasst-u8```
+
+		Set artificial viscosity (hyperviscosity) of order 2, 4, 6, 8. When supplying one value, it is used for all levels. Otherwise, supply as many values
+        as there are levels, separated by a comma. E.g., `--libpfasst-u2 0.3 --libpfasst-u4 0.1,0.05` on two levels.
+
+    * ```--libpfasst-u-fields```
+
+		Which fields to apply artificial viscosity on: can be `all`, `none`, or a (comma-separated) combination of `phi_pert`, `div`, `vrt`.
+
+**Note:** The flags `-u` and `-U` must not be used for setting viscosity of the MLSDC program! 
+
+## 3. Using the output
 
 * The programs generate a bunch of .sweet binary output files:
 
