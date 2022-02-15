@@ -16,6 +16,7 @@ SWEET is a community code with several contributors.
  * [Pedro Peixoto](https://www.ime.usp.br/~pedrosp/about-me/)
  * Andreas Schmitt
  * Francois Hamon
+ * [Valentina Schüller](https://valentinaschueller.github.io/)
 
 
 <h1>SWEET users (might be incomplete)</h1>
