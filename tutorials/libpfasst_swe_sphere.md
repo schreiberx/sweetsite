@@ -123,13 +123,13 @@ Use the `libpfasst-*` parameters to adjust the convergence order as needed. (see
 You can work with the files using the existing Python scripts for spectral sphere data, e.g.:
 
 ```bash
-$ ./mule_local/python/mule_local/postprocessing/SphereDataSpectralDiff.py file1.sweet file2.sweet
+$ ./mule_local/python/postprocessing/SphereDataSpectralDiff.py file1.sweet file2.sweet
 ```
 
 or, for plotting
 
 ```bash
-$ ./mule_local/python/mule_local/postprocessing/plot_SphereDataSpectral.py file1.sweet output.png
+$ ./mule_local/python/postprocessing/plot_SphereDataSpectral.py file1.sweet output.png
 ```
 
 
