@@ -12,6 +12,9 @@ More publications are currently in progress.
   <li>
     ... more is currently in review ...
   </li>
+  <li>
+    Raphaldini, Peixoto, Raupp, Teruya, Bustamante (2020). Precession resonance of Rossby wave triads and the generation of low frequency atmospheric oscillations, Physics of Fluids.
+  </li>
   <li>F. P. Hamon, M. Schreiber, M. L. Minion (2020). Parallel-in-Time Multi-Level Integration of the Shallow-Water Equations on the Rotating Sphere, Journal of Computational Physics, Elsevier
   </li>
   <li>P. S. Peixoto, M. Schreiber (2019). Semi-Lagrangian Exponential Integration with application to the rotating shallow water equations, SIAM Journal of Scientific Computing, Society for Industrial and Applied Mathematics
