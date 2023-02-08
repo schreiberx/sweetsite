@@ -133,4 +133,4 @@ $ ./mule_local/python/postprocessing/plot_SphereDataSpectral.py file1.sweet outp
 ```
 
 
-For more information about all of this, see the [documentation](https://github.com/schreiberx/sweet/tree/master/doc/libpfasst)
+For more information about all of this, see the [documentation](https://github.com/schreiberx/sweet/tree/master/doc/timeintegration/libpfasst)
