@@ -27,7 +27,7 @@ $ make clean
 Compile `libpfasst_swe_sphere_imex_sdc` program for the shallow-water equations on the sphere using the PFASST algorithm and an IMEX sweeper.
 
 ```bash
-$ scons --program=libpfasst_swe_sphere_imex_sdc --quadmath=disable --libpfasst=enable --sweet-mpi=enable --libsph=enable --plane-spectral-space=disable --sphere-spectral-space=enable --threading=off --libfft=enable --sphere-spectral-dealiasing=enable
+$ scons --program=libpfasst_swe_sphere_imex_sdc
 ```
 
 To compile in debug mode, add the flag `--mode=debug`.
