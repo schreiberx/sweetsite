@@ -5,7 +5,7 @@ permalink: /documentation.html
 ---
 
 
-There is plenty of documentation in the [./doc](var w=window.open('https://github.com/schreiberx/sweet/tree/master/doc/') folder in the SWEET repository. Please have a look at this directory first:
+There is plenty of documentation in the [./doc](https://github.com/schreiberx/sweet/tree/master/doc/) folder in the SWEET repository. Please have a look at this directory first:
 
 
 <ul>
