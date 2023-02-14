@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Burgers
-permalink: tutorials/burgers_tut.html
+permalink: tutorials/other_burgers_tut.html
 ---
 
 

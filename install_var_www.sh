@@ -1,3 +1,8 @@
 #! /bin/bash
 
-jekyll build  -d /var/www/html/sweetsite
+set -e
+
+rm -rf /var/www/html/sweetsite
+
+jekyll build -s /home/martin/workspace/sweet_website_REPOS -d /var/www/html/sweetsite
+

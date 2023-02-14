@@ -1,63 +1,69 @@
 ---
 layout: page
-title: Home
+title: SWEET! Shallow Water Equation Environment for Tests, Awesome!
 permalink: index.html
 ---
 
-SWEET! Shallow Water Equation Environment for Tests, Awesome!
+## What is SWEET?
 
-<h2 id="features">Features</h2>
+This software allows a fast exploration / investigation / prototyping of time discretization methods for PDEs which can be solved with global spectram methods (Fourier & Spherical harmonics).
 
-<h3>Domains</h3>
+It's made to
+ * accellerate research around the development of numerical time integration methods
+ * investigate new ways to express parallelization
+ * do some early investigations in scalability of novel time integration methods (e.g., parallel-in-time)
+
+
+## What is SWEET NOT?
+
+SWEET is not intended to be any production HPC code to replace any dynamical cores (yet ;-) ).
+
+
+# Example
+{% include youtubePlayer.html id="bEJ8c26TFEk" %}
+
+## Features
+
+### Domains
 SWEET supports periodic boundary conditions for
-<ul>
-  <li>the bi-periodic plane (2D torus)</li>
-  <li>the sphere</li>
-</ul>
+ * the bi-periodic plane (2D torus)
+ * the sphere
 
-<h3>Space discretization</h3>
-<ul>
-  <li>PLANE: Spectral methods based on Fourier space</li>
-  <li>PLANE: Finite differences</li>
-  <li>SPHERE: Spherical Harmonics</li>
-</ul>
+### Space discretization</h3>
 
-<h3>Time discretization</h3>
-<ul>
-  <li>Explicit RK</li>
-  <li>Implicit RK</li>
-  <li>Leapfrog</li>
-  <li>Crank-Nicolson</li>
-  <li>Semi-Lagrangian</li>
-  <li>Parallel-in-time
-  <ul>
-    <li>Parareal</li>
-    <li>PFASST</li>
-    <li>Rational approximation of exponential Integrators (REXI)</li>
-    <ul>
-      <li>T-REXI (Terry's method)</li>
-      <li>CI-REXI (Cauchy Contour integral method)</li>
-      <li>file import</li>
-    </ul>
-  </ul>
-  </li>
-  <li>...and many more time steppers...</li>
-</ul>
+ * PLANE: Spectral methods based on Fourier space
+ * PLANE: Finite differences (with convolution in spectral space)
+ * PHERE: Spherical Harmonics
+
+### Time discretization
+
+ * Explicit RK
+ * Implicit RK
+ * Leapfrog
+ * Crank-Nicolson
+ * Semi-Lagrangian
+ * Parallel-in-time
+   * Parareal
+   * PFASST<
+   * Rational approximation of exponential integrators (REXI)
+     * T-REXI (Terry's method)
+     * CI-REXI (Cauchy Contour integral method)
+     * B-REXI 
+ * ...and many more time steppers...
 
 
-<h3>Special features</h3>
-<ul>
-  <li>Graphical user interface</li>
-  <li>Fast Helmholtz solver in spectral space</li>
-  <li>Easy-to-code in C++</li>
-  <li>...</li>
-</ul>
+### Special features
+ * Graphical user interface
+ * Fast Helmholtz solver in spectral space
+ * Easy-to-code in C++
+ * ...
 
-<h3>Applications and benchmarks</h3>
+### Applications and benchmarks
+
 There's support for various applications
-<ul>
-  <li>Shallow-water equations on plane/sphere</li>
-  <li>Advection</li>
-  <li>Burgers’</li>
-  <li>...</li>
-</ul>
+
+ * Shallow-water equations on plane/sphere
+ * Advection
+ * Burgers'
+ * ...
+
