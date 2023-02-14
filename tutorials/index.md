@@ -21,9 +21,9 @@ This page provides an overview of tutorials with SWEET
 
  * [Using graphical user interface](basic_swe_sphere_with_gui.html)
 
- * [(TODO) Using MULE](basic_mule.html)
+ * [Postprocessing data](basic_postprocessing.html)
 
- * [(TODO) Postprocessing data](basic_postprocessing.html)
+ * [(TODO) Using MULE](basic_mule.html)
 
 
 ## Advanced
