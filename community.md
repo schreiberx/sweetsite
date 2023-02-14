@@ -5,26 +5,15 @@ permalink: /community.html
 ---
 
 
-There is a [SLACK](http://www.slack.com/) channel sweet-dev.slack.com available for SWEET developers and users.
+There is a [Discord group](https://discord.gg/uT6PeAav) for SWEET developers and users.
 
-SWEET is a community code with several contributors.
+# SWEET developers
 
-
-<h1>Current contributors</h1>
-
- * [Martin Schreiber](http://www.martin-schreiber.info)
- * [Pedro Peixoto](https://www.ime.usp.br/~pedrosp/about-me/)
- * Andreas Schmitt
  * Francois Hamon
+ * Thibaut Lunet
+ * [Pedro S. Peixoto](https://www.ime.usp.br/~pedrosp/about-me/)
+ * Andreas Schmitt
+ * [Martin Schreiber](http://www.martin-schreiber.info)
+ * Joao Steinstraesser
  * [Valentina Schüller](https://valentinaschueller.github.io/)
 
-
-<h1>SWEET users (might be incomplete)</h1>
-
- * Bruno de Campos
- * Matthew Normile
-
-
-<h1>Former contributors</h1>
-
- * [empty]
