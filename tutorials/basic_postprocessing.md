@@ -4,7 +4,7 @@ title: Postprocessing
 permalink: tutorials/basic_postprocessing.html
 ---
 
-There are three different sources for postprocessing:
+There are three different sources of data for postprocessing:
 
  1. Based on the console output
 
@@ -12,7 +12,16 @@ There are three different sources for postprocessing:
 
  3. Based on file output
 
-There's one golden rule: **Never write your own output format and parse it on your own**.
+
+There's one **very important rule**: Whatever you do,
+
+ * Never try to process any data output file on your own.
+ * Never try to process the job directories and extract names from them.
+ * Never try to parse any text output files from std::cout on your own.
+
+To summarize:  **Never write your own output format and parse it on your own**.
+
+Whenever you do this, this will brake with things very likely later on. Please always use the MULE tools for caring about data processing.
 
 If you ever think that there's something which can't be coped with in SWEET, please talk to the developers.
 
@@ -134,7 +143,7 @@ which will search for folders starting with ```./job_*``` and run all run.sh scr
 
 It will also redirect the output to ```output.out```.
 
-Besides the regular output files which we can visualize with ```mule.postprocessing.plot.sphere.spectral```, there are now also further entires in the job data. We can have a look at it by running
+Besides the regular output files which we can visualize with ```mule.postprocessing.plot.sphere.physical```, there are now also further entires in the job data. We can have a look at it by running
 
 ```bash
 $ mule.jobdata ./job_*
@@ -148,6 +157,6 @@ Now, we find some additional entries with the prefix ```output.*``` created for 
 
 There are standardized SWEET output files which should be used for larger outputs.
 
-We can visualize the standard SWEET output files by calling, e.g., ```mule.postprocessing.plot.sphere.spectral [filename.sweet]```.
+We can visualize the standard SWEET output files by calling, e.g., ```mule.postprocessing.plot.sphere.physical [filename.sweet/.csv]```.
 
 
