@@ -9,7 +9,7 @@ Brief description:
  * Computing the difference
  * Plotting the results
 
-Supplementary material: [corresponding tutorial folder](https://schreiberx.github.io/sweetsite/tutorials/basics/swe_sphere_benchmark_with_reference_job)
+Supplementary material: [corresponding tutorial folder](https://github.com/schreiberx/sweet/tree/master/tutorials/swe_sphere_benchmark_with_reference_job)
 
 
 ## Benchmark job generation script
