@@ -11,10 +11,8 @@ permalink: /development/index.html
 * [SWEET CI system](https://gitlab.inria.fr/mschreib/sweet-ci-tests/-/pipelines)
 
 
-## Development
+## Coding conventions
 
-* **Coding conventions**
-
-  We always appreciate new contributors to our development.
-  Please checkout our [coding conventions](coding_conventions.html) to ensure that your contributions are in harmony with the existing code.
+We always appreciate new contributors to our development.
+Please checkout our [coding conventions](coding_conventions.html) to ensure that your contributions are in harmony with the existing code.
 

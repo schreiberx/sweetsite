@@ -99,7 +99,7 @@ jg.compile.sphere_spectral_space = 'enable'
 
 # Runtime parameters
 jg.runtime.space_res_spectral = 128                  # 128 modes
-jg.runtime.benchmark_name = "three_gaussian_bumps"   # Galewsky benchmar
+jg.runtime.benchmark_name = "three_gaussian_bumps"   # Galewsky benchmark
 jg.runtime.max_simulation_time = 60*60*24            # 1 days
 
 jg.runtime.output_timestep_size = 60*60  # Generate output every 1 hour
@@ -112,9 +112,6 @@ jg.runtime.timestep_size  = 300              # Use timestep size of 300
 
 # Create job directories
 jg.gen_jobscript_directory()
-
-# Write compile commands to separate file (in case we're on a super computer)
-#jg.write_compilecommands()
 
 ```
 

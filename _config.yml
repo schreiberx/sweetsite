@@ -9,7 +9,7 @@
 title: SWEET - Shallow Water Equation Environment for Tests, Awesome!
 email: schreiberx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-        PDE solver framework with focus on 2D surfaces (bi-periodic plane and sphere)
+        PDE solver framework for global spectral methods (bi-periodic plane and sphere)
 
 baseurl: "/sweetsite/" # the subpath of your site, e.g. /blog
 url: "https://schreiberx.github.io" # the base hostname & protocol for your site
@@ -18,3 +18,5 @@ url: "https://schreiberx.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+#theme: jekyll-theme-chirpy

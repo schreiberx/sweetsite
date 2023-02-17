@@ -5,32 +5,158 @@ permalink: /development/coding_conventions.html
 ---
 
 
-# Short summary
 
-See also [this discussion](https://khalilstemmler.com/blogs/camel-case-snake-case-pascal-case/#Comparison-of-naming-conventions-in-other-programming-languages) where we briefly summarize things in this table.
+Different developers working together have usually different coding conventions.
+There are different coding styles and a nice discussion and terminology can be found [on this webpage](https://web.archive.org/web/20230217100359/https://khalilstemmler.com/blogs/camel-case-snake-case-pascal-case/#Comparison-of-naming-conventions-in-other-programming-languages).
 
+An agreement to coding conventions has to be achieved when working together on one project for several reasons.
+One of the main reasons is to keep the code clean and thus to maintain a better code structure.
+
+We give some hints about these coding guidelines in the SWEET development
+
+
+## 1. For C++ programming
 
 |-----------------------|-----------------------|
 | Type			| Format		|
 |-----------------------|-----------------------|
-| Functions & methods	| camelCase()	|	
+| Functions	| camelCase()	|	
+| Classes	| PascalCase	|	
+| Interfaces	| PascalCase	|	
+| Namespaces	| pascalCase	|	
+| Constants	| SCREAMING_SNAKE_CASE	|	
+|-----------------------|-----------------------|
+
+
+Example:
+```c++
+#define FOO_BAR_YEAH 456
+
+class SomeClass {
+	const int FOO_BAR = 123;
+	void functionInClass() {}
+};
+```
+
+### Functions
+
+#### Function parameters
+
+Parameters of methods are prefixed by ```i_```, ```o_``` or ```io_```.
+
+ * ```i_``` means that this parameter is accessed read/only (const).
+ * ```o_``` is used to declare this parameter as being an output reference to write some output values.
+ * ```io_``` is used to declare an input/output pointer or reference which is read and written.
+
+|-----------------------|-----------------------|
+| Type			| Format		|
+|-----------------------|-----------------------|
+| Input		| i_variableName	|	
+| Output	| o_variableName	|	
+| Input/Output	| io_variableName	|	
+|-----------------------|-----------------------|
+
+
+Output parameters always have to be of type pointer.
+No references should ever be used for output parameters!
+Return values handed back to the calling method are still allowed and have so far no convention.
+
+Example:
+
+```c++
+void funFunction(
+	int i_inputValue,
+	const int &i_inputValue2,
+	int &o_output_Value
+)
+```
+
+#### Functions themselves
+
+Private functions should be prefixed with an ```_```
+
+Example:
+
+```c++
+class Foo {
+private:
+	void _funFunction() {};
+}
+```
+
+### Class attributes
+
+Attributes should be prefixed by ```_``` if they are private attributes.
+
+ * ```_``` means that this attribute is private.
+ * no ```_``` means that this attribute is public.
+
+|-----------------------|-----------------------|
+| Type			| Format		|
+|-----------------------|-----------------------|
+| Input		| i_variableName	|	
+| Output	| o_variableName	|	
+| Input/Output	| io_variableName	|	
+|-----------------------|-----------------------|
+
+
+Output parameters always have to be of type pointer.
+No references should ever be used for output parameters!
+Return values handed back to the calling method are still allowed and have so far no convention.
+
+Example:
+
+```c++
+void funFunction(
+	int i_inputValue,
+	const int &i_inputValue2,
+	int &o_output_Value
+)
+```
+
+### Identation
+Blocks and scopes have to be indented by using a single TAB for each identation.
+
+### Eclipse configuration
+Eclipse supports features for automatic formattation of code via ```[Source] -> [Format]```.
+The style which is used by SWEET is programmed is closely related to "GNU/Allman" and a profile file ```SWEET_eclipse_formattation.xml``` is available in the current folder.
+This can be loaded via ```[Project] -> [Properties] -> [C/C++ General] -> [Formatter]```.
+Make sure to tick the box ```Enable project specific settings``` and ```[Import]``` the SWEET profile.
+
+
+## 2. Coding conventions for Python
+
+The entire workflow to compile and execute code written in SWEET as well as the postprocessing is mainly written in Python.
+We use Python 3 without any exceptions!
+
+### Overview
+
+|-----------------------|-----------------------|
+| Type			| Format		|
+|-----------------------|-----------------------|
+| Functions	| pascalCase()	|	
 | classes	| PascalCase	|	
-| interfaces	| PascalCase	|	
-| namespaces	| PascalCase	|	
+| interfaces	| -	|	
+| namespaces	| -	|	
 | constants	| SCREAMING_SNAKE_CASE	|	
 |-----------------------|-----------------------|
 
 
-# Purpose
+Example:
 
-Different developers working together have usually different coding conventions.
-Therefore an agreement to coding conventions has to be achieved when working together on one project for several reasons.
-One of the main reasons is to keep the code clean and thus to maintain a better code structure.
+```python
+class SomeClass:
+	SOME_CONSTANT = 123
+	def thisIsAFunction(self):
+		pass
 
-## Coding conventions for Python
 
-The entire workflow to compile and execute code written in SWEET as well as the postprocessing is mainly written in Python.
-We use Python 3 without any exceptions!
+someClass = SomeClass()
+```
+
+
+### PEP8 guidelines
+
 Generally, please try to follow PEP8 guidelines which can be found at \url{https://www.python.org/dev/peps/pep-0008/} with the following exceptions:
 
  * Use tab indentation with tabs configures to take 4 spaces
@@ -40,47 +166,7 @@ Generally, please try to follow PEP8 guidelines which can be found at \url{https
 
 
 
-
-## Coding conventions for C++
-
-### Eclipse configuration
-Eclipse supports features for automatic formattation of code via ```[Source] -> [Format]```.
-The style which is used by SWEET is programmed is closely related to "GNU/Allman" and a profile file ```SWEET_eclipse_formattation.xml``` is available in the current folder.
-This can be loaded via ```[Project] -> [Properties] -> [C/C++ General] -> [Formatter]```.
-Make sure to tick the box ```Enable project specific settings``` and ```[Import]``` the SWEET profile.
-
-### Identation
-Blocks and scopes have to be indented by using a single TAB for each identation.
-
-### Naming conventions
-
-#### Types
-
-Types are distinguished whether they are used as a
- * class,
- * class with templates
- * typedef followed by a specialized class
- * atomic variables (int, char, float, ...)
-
-
-#### Variable naming
-
- * For atomic types (int, char, float, etc.), all variables have to be written using underscores and small letters.
-
- * For class types, the class variables have to be written without underscores
-
-#### Parameters for methods
-
-Parameters of methods are prefixed by ```i_```, ```o_``` or ```io_```.
-
- * ```i_``` means that this parameter is accessed read/only (const).
- * ```o_``` is used to declare this parameter as being an output reference to write some output values.
- * ```io_``` is used to declare an input/output pointer or reference which is read and written.
-
-Output parameters always have to be of type pointer.
-No references should ever be used for output parameters!
-Return values handed back to the calling method are still allowed and have so far no convention.
-
+## 4. Commenting
 
 ```c++
 /**
@@ -103,11 +189,6 @@ char fooBar(
 }
 ```
 
-## Template parameters
-ALL template parameters have to be prefixed with a ```t_``` to differ between template types and other types.
-
-
-## Comments
 Comments are one of the most important thing in writing code.
 Therefore as much comments as are necessary or being requested by other developers have to be written.
 
