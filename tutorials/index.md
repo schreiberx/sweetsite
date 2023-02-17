@@ -24,7 +24,13 @@ This page provides an overview of tutorials with SWEET
 
  * [Convergence benchmark with reference job](basic/swe_sphere_convergence_with_reference_job.html)
 
- * [Wallclock benchmark with reference job (TODO)](basic/swe_sphere_wallclock_with_reference_job.html)
+
+
+## HPC
+
+This section contains HPC-relevant aspects
+
+ * [Plan generation: Wall-clock time benchmarks](basic/swe_sphere_wallclocktime_vs_error_with_plans.html)
 
 
 ## MULE
