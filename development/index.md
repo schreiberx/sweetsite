@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Development
-permalink: /development/index.html
 ---
 
 ## Repositories

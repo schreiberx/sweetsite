@@ -1,7 +1,6 @@
 ---
 layout: page
 title: SWEET! Shallow Water Equation Environment for Tests, Awesome!
-permalink: index.html
 ---
 
 ## What is SWEET?

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Gallery - Polvani
-permalink: /gallery/polvani.html
 ---
 
 

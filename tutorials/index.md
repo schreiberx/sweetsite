@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Tutorials
-permalink: /tutorials/
 ---
 
 
@@ -12,28 +11,33 @@ This page provides an overview of tutorials with SWEET
 
 ## Installation
 
- * [Installing required packages](installation_basics.html)
+ * [Installing required packages](installation/basics.html)
 
 
 ## Basic steps with SWEET
 
- * [Command line compilation & running](basic_swe_sphere_cmd_line.html)
+ * [Command line compilation & running](basic/swe_sphere_cmd_line.html)
 
- * [Using graphical user interface](basic_swe_sphere_with_gui.html)
+ * [Using graphical user interface](basic/swe_sphere_with_gui.html)
 
- * [Postprocessing data](basic_postprocessing.html)
+ * [Postprocessing data](basic/postprocessing.html)
 
- * [(TODO) Using MULE](basic_mule.html)
+ * [Benchmarks with reference job](basic/benchmarks_with_reference_jobs.html)
+
+
+## MULE
+
+ * [(TODO) Using MULE](mule/basics.html)
 
 
 ## Advanced
 
- * [LibPFASST SWE Sphere programs](advanced_libpfasst_swe_sphere.html)
+ * [LibPFASST SWE Sphere programs](advanced/libpfasst_swe_sphere.html)
 
 
 ## Deprecated
 
- * [Burgers equation](other_burgers_tut.html)<br />
+ * [Burgers equation](others/burgers_tut.html)<br />
    (Warning: Outdated)
 
 

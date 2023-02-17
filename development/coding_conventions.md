@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Coding conventions
-permalink: /development/coding_conventions.html
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Gallery
-permalink: /gallery/index.html
 ---
 
 

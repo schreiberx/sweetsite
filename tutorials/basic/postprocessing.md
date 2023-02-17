@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Postprocessing
-permalink: tutorials/basic_postprocessing.html
 ---
 
 There are three different sources of data for postprocessing:

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Gallery - Burgers Gaussian Bumps
-permalink: /gallery/burgers_gauss.html
 ---
 
 

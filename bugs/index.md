@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Bugs reporting
-permalink: /bugs/index.html
 ---
 
 If you encounter any bugs, we appreciate feedback about this.

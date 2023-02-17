@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Documentation
-permalink: /docs/index.html
 ---
 
 There is plenty of documentation in the [./doc](https://github.com/schreiberx/sweet/tree/master/doc/) folder in the SWEET repository. Please have a look at this directory first:

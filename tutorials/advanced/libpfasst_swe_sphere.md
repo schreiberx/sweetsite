@@ -1,7 +1,6 @@
 ---
 layout: page
 title: LibPFASST x SWEET Programs
-permalink: tutorials/advanced_libpfasst_swe_sphere.html
 ---
 
 

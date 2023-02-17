@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Running SWE on the rotating sphere with a GUI
-permalink: tutorials/basic_swe_sphere_with_gui.html
 ---
 
 Run SWE on the sphere with Graphical User Interface (GUI).
