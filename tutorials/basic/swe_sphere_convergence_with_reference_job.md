@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Running SWE sphere benchmarks with comparison to reference jobs
+title: Running SWE sphere convergence studies with reference jobs
 ---
 
 Brief description:
@@ -80,4 +80,13 @@ $ ./postprocessing_plot.py
 ```
 
 The plots are generated as .pdf files in the current folder.
+
+
+## WARNING
+
+The generated plots are only useful if they show time step size vs. error.
+
+The wallcock time results shouldn't be used for performance discussions since many things could have gone wrong.
+
+This is discussed in the following HPC benchmark tutorial.
 

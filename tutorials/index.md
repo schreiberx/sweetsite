@@ -22,7 +22,9 @@ This page provides an overview of tutorials with SWEET
 
  * [Postprocessing data](basic/postprocessing.html)
 
- * [Benchmarks with reference job](basic/benchmarks_with_reference_jobs.html)
+ * [Convergence benchmark with reference job](basic/swe_sphere_convergence_with_reference_job.html)
+
+ * [Wallclock benchmark with reference job (TODO)](basic/swe_sphere_wallclock_with_reference_job.html)
 
 
 ## MULE
