@@ -8,8 +8,8 @@ title: Program arguments
 This tutorial explains how the program arguments are processed.
 
 Supplementary material:
- * [tutorial folder (TODO)](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/programArguments)
- * [tutorial main source file (TODO)](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/programArguments)
+ * [tutorial folder](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/programArguments)
+ * [tutorial main source file](https://github.com/schreiberx/sweet/blob/master/src/programs/tutorial_classDict_programArguments.cpp)
 
 
 # Examples

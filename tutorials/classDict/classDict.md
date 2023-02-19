@@ -30,8 +30,8 @@ Remark: A commonly used solution is to use Singletons, but this is now option fo
 
 
 Supplementary material:
- * [tutorial folder (TODO)](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/classDict)
- * [tutorial main source file (TODO)](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/classDict)
+ * [tutorial folder](https://github.com/schreiberx/sweet/tree/master/tutorials/classDict/classDict)
+ * [tutorial main source file](https://github.com/schreiberx/sweet/blob/master/src/programs/tutorial_classDict_classDict.cpp)
 
 
 
