@@ -216,6 +216,15 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
+    h1 {
+        font-size: 36px;
+	font-weight:bold;
+
+        @include media-query($on-laptop) {
+            font-size: 32px;
+        }
+    }
+
     h2 {
         font-size: 32px;
 	font-weight:bold;

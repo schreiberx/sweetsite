@@ -24,7 +24,17 @@ This page provides an overview of tutorials with SWEET
 
  * [Convergence benchmark with reference job](basic/swe_sphere_convergence_with_reference_job.html)
 
+ * [Error handling](basic/error.html)
 
+
+## From program arguments to their utilization
+
+Each program can have **different variables** which are modified by particular **program arguments**.
+Hence, we need to be able to do this individually for each program which is explained right here.
+
+ * [Program argument class](classDict/programArguments.html)
+ 
+ * [Class dictionary](classDict/classDict.html)
 
 ## HPC
 
