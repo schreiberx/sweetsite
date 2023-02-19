@@ -43,19 +43,19 @@ if (!pa.setup(i_argc, i_argv))
 Arguments can then be parsed by calling the ```getArgumentValueByKey``` (or ```getArgumentValueBy2Keys``` and similar functions).
 
 ```c++
-if (!pa.getArgumentValueByKey("pde-sphere-f0", sphere_fsphere_f0))
+if (!pa.getArgumentValueByKey("--pde-sphere-f0", sphere_fsphere_f0))
 {
 	if (error.errorForward(i_pa.error))
 		return false;
 }
 
-if (!pa.getArgumentValueBy2Keys("pde-sphere-radius", "a", sphere_radius))
+if (!pa.getArgumentValueBy2Keys("--pde-sphere-radius", "-a", sphere_radius))
 {
 	if (error.errorForward(i_pa.error))
 		return false;
 }
 
-if (!pa.getArgumentValueBy2Keys("pde-use-fsphere", "F", sphere_use_fsphere))
+if (!pa.getArgumentValueBy2Keys("--pde-use-fsphere", "-F", sphere_use_fsphere))
 {
 	if (error.errorForward(i_pa.error))
 		return false;
