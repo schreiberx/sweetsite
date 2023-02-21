@@ -103,7 +103,21 @@ In particular, you can find there some preset configuration for sdc, that you ca
 $ mule.sdc.generateSetup --preset=P1
 ```
 
-You can see all the registered preset configuration using
+Here the `P1` preset configuration use the following parameters :
+```
+P1 :
+--nNodes 4
+--nodeType RADAU-RIGHT
+--nIter 3
+--qDeltaImplicit BEPAR
+--qDeltaExplicit PIC
+--initSweepType QDELTA
+--useEndUpdate False
+--diagQDeltaInit BEPAR
+--diagonal True
+``` 
+
+You can see all the registered preset configurations using
 
 ```bash
 $ mule.sdc.generateSetup --showPreset
