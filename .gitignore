@@ -1,3 +1,5 @@
 **/.sass-cache
 .cproject
 .project
+_site
+Gemfile.lock

@@ -5,10 +5,10 @@ title: SWEET! Shallow Water Equation Environment for Tests, Awesome!
 
 ## What is SWEET?
 
-This software allows a fast exploration / investigation / prototyping of time discretization methods for PDEs which can be solved with global spectram methods (Fourier & Spherical harmonics).
+This software allows a fast exploration / investigation / prototyping of time discretization methods for PDEs which can be solved with global spectral methods (Fourier & Spherical harmonics).
 
 It's made to
- * accellerate research around the development of numerical time integration methods
+ * accelerate research around the development of numerical time integration methods
  * investigate new ways to express parallelization
  * do some early investigations in scalability of novel time integration methods (e.g., parallel-in-time)
 
@@ -32,7 +32,7 @@ SWEET supports periodic boundary conditions for
 
  * PLANE: Spectral methods based on Fourier space
  * PLANE: Finite differences (with convolution in spectral space)
- * PHERE: Spherical Harmonics
+ * SPHERE: Spherical Harmonics
 
 ### Time discretization
 
@@ -43,11 +43,12 @@ SWEET supports periodic boundary conditions for
  * Semi-Lagrangian
  * Parallel-in-time
    * Parareal
-   * PFASST<
+   * PFASST
    * Rational approximation of exponential integrators (REXI)
      * T-REXI (Terry's method)
      * CI-REXI (Cauchy Contour integral method)
      * B-REXI 
+ * Spectral Deferred Corrections
  * ...and many more time steppers...
 
 

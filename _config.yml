@@ -19,4 +19,7 @@ url: "https://schreiberx.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+plugins:
+  - jemoji
+
 #theme: jekyll-theme-chirpy
