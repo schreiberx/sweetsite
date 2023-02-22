@@ -38,7 +38,7 @@ error.errorSet("Some error occured for '"+i_key+"'");
 Testing for an error is made by calling
 
 ```c++
-if (someClass.error.errorExists())
+if (someClass.error.exists())
 {
 	[...]
 }
@@ -52,7 +52,7 @@ There's no other way than processing the error (see below).
 The error is assumed to be processed if it's retreived by
 
 ```c++
-std::cerr <<  someClass.error.errorGet() << std::endl;
+std::cerr <<  someClass.error.get() << std::endl;
 ```
 
 
@@ -62,8 +62,15 @@ Rather than processing the error by the current class, we might like to forward 
 This can be done by forwarding the error:
 
 ```c++
-error.errorForward(someClass.error)
+error.forward(someClass.error)
 ```
+
+There's also a convenience function ```forwardWithPositiveReturn``` which can be used for returning from functions:
+
+```c++
+return error.forwardWithPositiveReturn(someClass.error);
+```
+This function return ```true``` in case of **no error**.
 
 
 # More features
@@ -71,11 +78,12 @@ error.errorForward(someClass.error)
 There are more features included and we like to refer to the respective class.
 
 
-
 # Debugging
 
 We try to enforce the development of bug-free code.
-Therefore, each error has to be taken care of (even if just calling ```.errorReset()``` which will wipe this error).
+Therefore, each error has to be taken care of (even if just calling ```.reset()``` which will wipe out this error).
 
-If an error has not been processed by retreiving it with ```.errorGet()```, the deconstructor will detect this and abort the program with a respective error message.
+If an error has not been processed by retreiving it with ```.get()```, the deconstructor will detect this and abort the program with a respective error message.
 
+There's an additional feature available:
+If setting the environment variable ```SWEET_ERROR_WITH_STACKTRACE``` to an arbitrary value, SWEET appends a full stack trace to each error output.
