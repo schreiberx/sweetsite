@@ -12,10 +12,12 @@ It's made to
  * investigate new ways to express parallelization
  * do some early investigations in scalability of novel time integration methods (e.g., parallel-in-time)
 
+ > :scroll: Check-out the list [tutorials](./tutorials/index.md) for some usage examples ...
+
 
 ## What is SWEET NOT?
 
-SWEET is not intended to be any production HPC code to replace any dynamical cores (yet ;-) ).
+SWEET is not intended to be any production HPC code to replace any dynamical cores (yet :wink:).
 
 
 # Example
@@ -24,11 +26,12 @@ SWEET is not intended to be any production HPC code to replace any dynamical cor
 ## Features
 
 ### Domains
+
 SWEET supports periodic boundary conditions for
  * the bi-periodic plane (2D torus)
  * the sphere
 
-### Space discretization</h3>
+### Space discretization
 
  * PLANE: Spectral methods based on Fourier space
  * PLANE: Finite differences (with convolution in spectral space)

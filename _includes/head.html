@@ -10,13 +10,16 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- for mathjax support -->
-  {% if page.usemathjax %}
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } }
-    });
+  <!-- Mathjax support, see https://stackoverflow.com/questions/34347818/using-mathjax-on-a-github-page -->
+  <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-  <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+      }
+    };
+  </script>
+  
 </head>
