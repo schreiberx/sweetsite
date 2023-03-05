@@ -11,4 +11,11 @@ layout: default
     {{ content }}
   </div>
 
+  <a href=https://www.github.com/{{ site.github_username }}/{{ site.git_repo }}/blob/master/{{ page.path }} class="gitbutton pill">
+    <span class="icon medium">
+      {% include git-logo.html %}
+    </span>
+    Edit on GitHub!
+  </a>
+
 </article>
