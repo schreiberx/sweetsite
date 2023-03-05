@@ -51,6 +51,7 @@ This section contains HPC-relevant aspects
 ## Advanced
 
  * [LibPFASST SWE Sphere programs](advanced/libpfasst_swe_sphere.html)
+ * [IMEX SDC for SWE on sphere (Galewsky)](advanced/imex_sdc_swe_sphere.html)
 
 
 ## Deprecated
