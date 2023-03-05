@@ -6,7 +6,7 @@ usemathjax: true
 
 This tutorial describes how to run the the IMEX Spectral Deferred Correction (SDC) time-stepping method implemented in SWEET.
 For theoretical content on SDC, you can check [this project](https://github.com/Parallel-in-Time/sdc-wiki) (in construction) or any literature on the subject.
-This tutorial suppose that the reader is aware of the algebraic formulation of SDC using $$Q$$ and $$Q_\Delta$$ matrices, and just present how to set those coefficients for the IMEX SDC solver in SWEET.
+This tutorial suppose that the reader is aware of the algebraic formulation of SDC using $Q$ and $Q_\Delta$ matrices, and just present how to set those coefficients for the IMEX SDC solver in SWEET.
 
 ## 1. Compilation and basic run
 
@@ -52,7 +52,7 @@ Finally, you can run the simulation with default settings for IMEX SDC using the
 $ ./build/swe_sphere* --benchmark-name=galewsky -M 128 --dt=1200 --timestepping-method=ln_imex_sdc
 ```
 
-This runs default IMEX-SDC, with Backward Euler (BE) for the linear terms and Forward Euler (FE) for the non-linear terms. In particular, it is stable with a time step $$\Delta t=1200s$$, which is four times larger that the maximum stable time step for ERK(4,4) with the same space discretization.
+This runs default IMEX-SDC, with Backward Euler (BE) for the linear terms and Forward Euler (FE) for the non-linear terms. In particular, it is stable with a time step $\Delta t=1200s$, which is four times larger that the maximum stable time step for ERK(4,4) with the same space discretization.
 
 ## 2. Changing SDC parameters
 
