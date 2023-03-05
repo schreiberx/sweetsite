@@ -6,3 +6,4 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
 gem "jemoji"
+gem "jekyll-relative-links"
