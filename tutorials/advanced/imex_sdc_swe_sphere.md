@@ -8,6 +8,8 @@ This tutorial describes how to run the the IMEX Spectral Deferred Correction (SD
 For theoretical content on SDC, you can check [this project](https://github.com/Parallel-in-Time/sdc-wiki) (in construction) or any literature on the subject.
 This tutorial suppose that the reader is aware of the algebraic formulation of SDC using $Q$ and $Q_\Delta$ matrices, and just present how to set those coefficients for the IMEX SDC solver in SWEET.
 
+> :bell: If you are not familiar with the whole theory on SDC, you can always follow this tutorials using the provided default parameters ... 
+
 ## 1. Compilation and basic run
 
 The up-to-date IMEX-SDC implementation is currently only implemented in the [`parallel_sdc`](https://github.com/schreiberx/sweet/tree/parallel_sdc) branch, that you can obtain like this :
@@ -42,6 +44,7 @@ $ sudo apt install pkg-config libgl-dev libxext-dev
 Then you can compile the SWE Sphere program with
 
 ```bash
+$ cd .. # if you were before in local_software
 $ make clean
 $ scons --program=swe_sphere --gui=enable
 ```
@@ -131,7 +134,7 @@ $ mule.sdc.generateSetup --showPreset
 
 > :scroll: This describe how to run diagonal SDC in parallel using OpenMP, combining eventually with space parallelization (also OpenMP).
 
-:warning: Nested parallelization is not possible with `gcc`, you must use a compiler allowing nested openMP parallelism. For instance, if `llvm` compiler are installed, you can use a dedicated SWEET environment with :
+:warning: Nested parallelization is not possible with `gcc`, you must use a compiler allowing nested openMP parallelism. For instance, if `llvm` compilers are installed, you can use a dedicated SWEET environment with :
 
 ```bash
 $ source ./activate.sh default_llvm
@@ -148,7 +151,7 @@ $ scons --program=swe_sphere --parallel-sdc-par-model=omp
 
 Then, generate the parameter file for diagonal SDC on 4 nodes :
 
-```
+```bash
 $ mule.sdc.generateSetup --preset P1
 ```
 
