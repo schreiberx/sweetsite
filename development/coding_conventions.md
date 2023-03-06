@@ -41,11 +41,11 @@ class SomeClass {
 
 #### Function parameters
 
-Parameters of methods are prefixed by ```i_```, ```o_``` or ```io_```.
+Parameters of methods are prefixed by `i_`, `o_` or `io_`.
 
- * ```i_``` means that this parameter is accessed read/only (const).
- * ```o_``` is used to declare this parameter as being an output reference to write some output values.
- * ```io_``` is used to declare an input/output pointer or reference which is read and written.
+ * `i_` means that this parameter is accessed read/only (const).
+ * `o_` is used to declare this parameter as being an output reference to write some output values.
+ * `io_` is used to declare an input/output pointer or reference which is read and written.
 
 |-----------------------|-----------------------|
 | Type			| Format		|
@@ -72,7 +72,7 @@ void funFunction(
 
 #### Functions themselves
 
-Private functions should be prefixed with an ```_```
+Private functions should be prefixed with an `_`
 
 Example:
 
@@ -85,10 +85,10 @@ private:
 
 ### Class attributes
 
-Attributes should be prefixed by ```_``` if they are private attributes.
+Attributes should be prefixed by `_` if they are private attributes.
 
- * ```_``` means that this attribute is private.
- * no ```_``` means that this attribute is public.
+ * `_` means that this attribute is private.
+ * no `_` means that this attribute is public.
 
 |-----------------------|-----------------------|
 | Type			| Format		|
@@ -117,10 +117,10 @@ void funFunction(
 Blocks and scopes have to be indented by using a single TAB for each identation.
 
 ### Eclipse configuration
-Eclipse supports features for automatic formattation of code via ```[Source] -> [Format]```.
-The style which is used by SWEET is programmed is closely related to "GNU/Allman" and a profile file ```SWEET_eclipse_formattation.xml``` is available in the current folder.
-This can be loaded via ```[Project] -> [Properties] -> [C/C++ General] -> [Formatter]```.
-Make sure to tick the box ```Enable project specific settings``` and ```[Import]``` the SWEET profile.
+Eclipse supports features for automatic formattation of code via `[Source] -> [Format]`.
+The style which is used by SWEET is programmed is closely related to "GNU/Allman" and a profile file [`SWEET_eclipse_formattation.xml`](https://github.com/schreiberx/sweet/blob/parallel_sdc/doc/sweet/coding_conventions/SWEET_eclipse_formattation.xml) is available in the source repository.
+This can be loaded via `[Project] -> [Properties] -> [C/C++ General] -> [Formatter]`.
+Make sure to tick the box `Enable project specific settings` and `[Import]` the SWEET profile.
 
 
 ## 2. Coding conventions for Python
@@ -156,11 +156,12 @@ someClass = SomeClass()
 
 ### PEP8 guidelines
 
-Generally, please try to follow PEP8 guidelines which can be found at \url{https://www.python.org/dev/peps/pep-0008/} with the following exceptions:
+Generally, please try to follow PEP8 guidelines which can be found at [https://www.python.org/dev/peps/pep-0008](https://www.python.org/dev/peps/pep-0008) 
+with the following exceptions:
 
  * Use tab indentation with tabs configures to take 4 spaces
    In VIM, this can be configured with
-   ```autocmd Filetype python setlocal tabstop=4 shiftwidth=4```
+   `autocmd Filetype python setlocal tabstop=4 shiftwidth=4`
  * Use Unix encoded python source code files
 
 
@@ -191,12 +192,11 @@ char fooBar(
 Comments are one of the most important thing in writing code.
 Therefore as much comments as are necessary or being requested by other developers have to be written.
 
-Equations in comments can be e.g. written with ```{\textbackslash}f\$ f(x):=1+2x {\textbackslash}f\$```.
+Equations in comments can be e.g. written with `{\textbackslash}f\$ f(x):=1+2x {\textbackslash}f\$`.
 See [this website](https://www.stack.nl/~dimitri/doxygen/manual/formulas.html) for examples.
 
 
-
-```
+```c++
 /**
  * comments preceeding functions should
  * follow the doxygen (www.doxygen.org)

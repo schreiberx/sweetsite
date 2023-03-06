@@ -13,5 +13,4 @@ title: Development
 ## Coding conventions
 
 We always appreciate new contributors to our development.
-Please checkout our [coding conventions](coding_conventions.html) to ensure that your contributions are in harmony with the existing code.
-
+Please checkout our debatable [coding conventions](coding_conventions.html) to ensure that your contributions are in harmony with the existing code.
