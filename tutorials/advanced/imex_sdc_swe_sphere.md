@@ -139,9 +139,10 @@ $ source ./activate.sh default_llvm
 
 ### Installation and parallel run
 
-First, compile the `swe_sphere` program using
+First, compile the `swe_sphere` program (no GUI !)
 
 ```bash
+$ make clean
 $ scons --program=swe_sphere --parallel-sdc-par-model=omp
 ```
 
