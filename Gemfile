@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll", "~> 4.3"
+gem "jekyll"
 gem "jemoji"
 gem "jekyll-relative-links"
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"
