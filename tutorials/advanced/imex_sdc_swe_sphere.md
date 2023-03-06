@@ -113,7 +113,7 @@ P1 :
 --nIter 3
 --qDeltaImplicit BEPAR
 --qDeltaExplicit PIC
---initSweepType QDELTA
+--initialSweepType QDELTA
 --useEndUpdate False
 --diagQDeltaInit BEPAR
 --diagonal True
