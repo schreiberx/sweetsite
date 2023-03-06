@@ -58,6 +58,8 @@ This runs default IMEX-SDC, with Backward Euler (BE) for the linear terms and Fo
 
 The simulation command shown in the previous section use IMEX SDC with the default settings implemented in SWEET, that is :
 
+Current default settings for IMEX SDC are :
+
 - 3 RADAU-RIGHT nodes
 - 3 iterations (sweeps)
 - initial sweep using COPY (of the initial time-step solution)
@@ -65,10 +67,10 @@ The simulation command shown in the previous section use IMEX SDC with the defau
 - BE for implicit sweep
 - FE for explicit sweep
 
-You can however change those parameters by providing a parameter file (SWEETFileDict format) using
+You can change those parameters by providing a parameter file (SWEETFileDict format) with
 the `--sdc-file=[...]` program argument.
 
-Such parameter file can be generated using the `mule.sdc.generateSetup` utility script.
+Parameter files can be generated using the `mule.sdc.generateSetup` utility script.
 For instance,
 
 ```bash
@@ -123,7 +125,37 @@ You can see all the registered preset configurations using
 $ mule.sdc.generateSetup --showPreset
 ```
 
-## 3. Parallel optimized SDC
+## 3. Parallel SDC
 
-... incoming ...
+### Preliminary notes
+
+> :scroll: This describe how to run diagonal SDC in parallel using OpenMP, combining eventually with space parallelization (also OpenMP).
+
+:warning: Nested parallelization is not possible with `gcc`, you must use a compiler allowing nested openMP parallelism. For instance, if `llvm` compiler are installed, you can use a dedicated SWEET environment with :
+
+```bash
+$ source ./activate.sh default_llvm
+```
+
+### Installation and parallel run
+
+First, compile the `swe_sphere` program using
+
+```bash
+$ scons --program=swe_sphere --parallel-sdc-par-model=omp
+```
+
+Then, generate the parameter file for diagonal SDC on 4 nodes :
+
+```
+$ mule.sdc.generateSetup --preset P1
+```
+
+And finally, program can be run on 100 time steps of size $\Delta{t}=300$ using :
+
+```bash
+OMP_NUM_THREADS=8 ./build/swe_sphere* --benchmark-name=galewsky -M 128 --dt=300 --timestepping-method=ln_imex_sdc --sdc-file=params_SDC.sweet -t $((300*100)) --num-threads-space=2
+```
+
+$\Rightarrow$ uses 8 processes in total, with 2 in space, and hopefully 4 in time :sweat_smile:
 
