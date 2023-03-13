@@ -28,6 +28,7 @@ The implemented program argument parser allows the following kinds of arguments:
 
 Program arguments in SWEET are processed in a centralized manner with the class ```ProgramArguments```.
 We can set it up by using, e.g.,
+
 ```c++
 sweet::ProgramArguments pa;
 if (!pa.setup(i_argc, i_argv))

@@ -23,22 +23,31 @@ Remove existing binaries
 $ make clean
 ```
 
-Compile `libpfasst_swe_sphere_imex_sdc` program for the shallow-water equations on the sphere using the PFASST algorithm and an IMEX sweeper.
+Compile `libpfasst_swe_sphere_imex_sdc` program for the shallow-water equations on the sphere using the PFASST algorithm and an MLSDC sweeper.
 
 ```bash
-$ scons --program=libpfasst_swe_sphere_imex_sdc
+$ scons --program=./src/programs/libpfasst/pde_sweSphere_mlsdc.cpp
 ```
 
+or
+
+```bash
+$ scons --program=programs/libpfasst/pde_sweSphere_mlsdc
+```
+
+
 To compile in debug mode, add the flag `--mode=debug`.
-For the pure explicit SDC program, replace `libpfasst_swe_sphere_imex_sdc` with `libpfasst_swe_sphere_expl_sdc`.
-For the MLSDC program, use `libpfasst_swe_sphere_mlsdc` instead.
+For the pure explicit SDC program, replace `pde_sweSphere_mlsdc` with `pde_sweSphere_expl_sdc`.
+For the IMEX program, use `pde_sweSphere_imex_sdc` instead.
+
+
 
 ## 2. Running the program
 
 Execute the program with the following parameters:
 
 ```
-$ ./build/libpfasst_*_release --dt=180 -t 1800 -M 128 --benchmark-name=galewsky --libpfasst-nodes-type=SDC_GAUSS_LOBATTO --libpfasst-nnodes 3 --libpfasst-niters 5 --output-file-mode=bin -o 1800 -v 2
+$ ./build/programs/libpfasst/*_release --dt=180 -t 1800 -M 128 --benchmark-name=galewsky --libpfasst-nodes-type=SDC_GAUSS_LOBATTO --libpfasst-nnodes 3 --libpfasst-niters 5 -o 1800 -v 2
 ```
 
 These are all the parameters you usually have to touch when running one of these programs.
@@ -67,9 +76,8 @@ Use the `libpfasst-*` parameters to adjust the convergence order as needed. (see
         Alternatively, using SDC_GAUSS_LEGENDRE: min(2·(3 - 2), 5) = 2.
         See [the documentation](https://github.com/schreiberx/sweet/tree/master/doc/libpfasst) for an explanation.
 
-    * ```--output-file-mode=bin -o 1800```
+    * ```-o 1800```
 
-		Use binary files for the output - **CSV output is not supported!**
         Do output every 1800 simulation seconds, i.e., only at the end.
 
     * ```-v 2```
@@ -101,7 +109,9 @@ Use the `libpfasst-*` parameters to adjust the convergence order as needed. (see
 
 		Which fields to apply artificial viscosity on: can be `all`, `none`, or a (comma-separated) combination of `phi_pert`, `div`, `vrt`.
 
+
 **Note:** The flags `-u` and `-U` must not be used for setting viscosity of the MLSDC program! 
+
 
 ## 3. Using the output
 
@@ -119,17 +129,10 @@ Use the `libpfasst-*` parameters to adjust the convergence order as needed. (see
 
         Prognostic phi perturbation field
 
-You can work with the files using the existing Python scripts for spectral sphere data, e.g.:
+You can work with the files using the existing Python scripts, e.g., for plotting
 
 ```bash
-$ ./mule_local/python/postprocessing/SphereDataSpectralDiff.py file1.sweet file2.sweet
+$ mule_local/bin/mule.postprocessing.plot.sphere.physical file1.sweet output.png
 ```
-
-or, for plotting
-
-```bash
-$ ./mule_local/python/postprocessing/plot_SphereDataSpectral.py file1.sweet output.png
-```
-
 
 For more information about all of this, see the [documentation](https://github.com/schreiberx/sweet/tree/master/doc/timeintegration/libpfasst)

@@ -44,8 +44,6 @@ if (someClass.error.exists())
 }
 ```
 
-
-
 # Processing an error
 
 There's no other way than processing the error (see below).
@@ -73,9 +71,28 @@ return error.forwardWithPositiveReturn(someClass.error);
 This function return ```true``` in case of **no error**.
 
 
+
+# Convenience macros
+
+There are also some convenience macros:
+
+The following one shecks for an error in ```someClass``` and, if there is an error, the error will be forwarded and ```false``` is returned:
+
+```c++
+ERROR_CHECK_WITH_FORWARD_AND_COND_RETURN_BOOLEAN(someClass);
+```
+
+The next macro can be used in the ```main()``` function. It will check whether an error exists and, if there's an error, print it and return ```EXIT_FAILURE```:
+
+```c++
+ERROR_CHECK_WITH_PRINT_AND_COND_RETURN_EXIT(someClass);
+```
+
+
 # More features
 
-There are more features included and we like to refer to the respective class.
+There are more macros and features included and we like to refer to the respective class.
+
 
 
 # Debugging
