@@ -135,4 +135,4 @@ You can work with the files using the existing Python scripts, e.g., for plottin
 $ mule_local/bin/mule.postprocessing.plot.sphere.physical file1.sweet output.png
 ```
 
-For more information about all of this, see the [documentation](https://github.com/schreiberx/sweet/tree/master/doc/timeintegration/libpfasst)
+For more information about all of this, see the [documentation](https://github.com/schreiberx/sweet/tree/master/doc/time_integration/libpfasst)
