@@ -1,6 +1,6 @@
 # Source files for the official SWEET documentation website 
 
-URL : https://schreiberx.github.io/sweetsite
+URL : https://sweet.gitlabpages.inria.fr/sweet-www/
 
 Web content is written in .md files. After committing the changes on the master branch, Jekyll is executed on them to generate .html files, and the website is automatically updated. 
 
