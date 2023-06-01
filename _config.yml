@@ -7,16 +7,12 @@
 
 # Site settings
 title: SWEET - Shallow Water Equation Environment for Tests, Awesome!
-email: schreiberx@gmail.com
+email: schreiberx+sweet@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
         PDE solver framework for global spectral methods (bi-periodic plane and sphere)
 
-baseurl: "/sweetsite/" # the subpath of your site, e.g. /blog
+baseurl: "/sweet-www/" # the subpath of your site, e.g. /blog
 url: "https://sweet.gitlabpages.inria.fr/sweet-www/" # the base hostname & protocol for your site
-#twitter_username: 
-#github_username: 
-github_username: schreiberx
-git_repo: sweetsite
 
 # Build settings
 markdown: kramdown
