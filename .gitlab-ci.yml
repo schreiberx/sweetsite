@@ -1,10 +1,16 @@
 # The Docker image that will be used to build your app
-image: alpine:latest
+image: ruby:2.7
+
 pages:
   script:
-    - apk add --update-cache --repository
-      http://dl-cdn.alpinelinux.org/alpine/edge/community/ zola
-    - zola build
+    - gem install bundler
+    - bundle install
+    - bundle exec jekyll build -d public
+
+#    - apk add --update-cache --repository
+#      http://dl-cdn.alpinelinux.org/alpine/edge/community/ zola
+#    - zola build
+
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
@@ -13,6 +19,7 @@ pages:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    
   tags:
     - ci.inria.fr
     - small
