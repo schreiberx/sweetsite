@@ -23,7 +23,7 @@ and generate the website using
 bundle exec jekyll serve --livereload
 ```
 
-Then you can browse the website at this address : http://127.0.0.1:4000/sweet-www/.
+Then you can browse the website at this address : http://127.0.0.1:4000/sweetsite/.
 The `--livereload` option allows to update the website rendering every time you modify a local source file.
 
 ## Old script for local developments :ghost:
